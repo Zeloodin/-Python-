@@ -143,24 +143,6 @@ def test_add_test_score_physics_chemistry():
     assert student.add_test_score("физика","химия") == "ValueError: Результат теста должен быть целым числом от 0 до 100", "Значение должно быть целым числом"
 
 if __name__ == "__main__":
-    r"""
-Запускал с pytest.main()
-Результат:
-
-============================= test session starts =============================
-platform win32 -- Python 3.10.6, pytest-8.0.0, pluggy-1.4.0
-rootdir: D:\Погружение в Python (семинары)\Zadanie15
-collected 0 items
-============================ no tests ran in 0.00s ============================
-
-Формат csv, мне понятен. Но не понял как составить данные об предметах с ученика.
-Можно было сделать так.
-Id;Name;Subname;{Items{grade:average_grade}}
-Может Id лишнее.
-Name;Subname;{Items{grade:average_grade}}
-Или сократить до двух ячеек.
-Name Subname;{subjects{grade:average_grade}}
-    """
     pytest.main() # Он не работает.
 
     # student.add_test_score("физика",50)
